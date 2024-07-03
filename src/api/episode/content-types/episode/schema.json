@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "episodes",
+  "info": {
+    "singularName": "episode",
+    "pluralName": "episodes",
+    "displayName": "Episode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "displayTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vision.image"
+    },
+    "episodeNumber": {
+      "type": "integer"
+    },
+    "season": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::season.season",
+      "inversedBy": "episodes"
+    },
+    "availableDate": {
+      "type": "datetime"
+    },
+    "contents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vision.content"
+    },
+    "credits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vision.credit"
+    },
+    "ratings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vision.rating"
+    }
+  }
+}

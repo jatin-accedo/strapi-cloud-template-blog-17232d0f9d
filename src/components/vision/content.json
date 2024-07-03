@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_vision_pro_contents",
+  "info": {
+    "displayName": "content",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "default": "http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
+    },
+    "format": {
+      "type": "string",
+      "default": "mp4"
+    },
+    "duration": {
+      "type": "integer",
+      "default": 6480000
+    },
+    "height": {
+      "type": "integer",
+      "default": 360
+    },
+    "width": {
+      "type": "integer",
+      "default": 640
+    }
+  }
+}

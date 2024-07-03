@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_locales",
+  "info": {
+    "singularName": "user-locale",
+    "pluralName": "user-locales",
+    "displayName": "UserLocale",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "displayText": {
+      "type": "string"
+    },
+    "countryInfo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    }
+  }
+}

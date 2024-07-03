@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_vision_pro_credits",
+  "info": {
+    "displayName": "credit",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
