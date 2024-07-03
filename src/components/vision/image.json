@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_vision_pro_images",
+  "info": {
+    "displayName": "image",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageType": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "thumbnail",
+        "banner",
+        "logo",
+        "backdrop",
+        "poster",
+        "backdrop_clean",
+        "poster_clean"
+      ],
+      "required": true,
+      "default": "poster"
+    },
+    "url": {
+      "type": "string"
+    },
+    "templateUrl": {
+      "type": "string"
+    }
+  }
+}

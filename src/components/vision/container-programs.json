@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_vision_container_programs",
+  "info": {
+    "displayName": "ContainerPrograms"
+  },
+  "options": {},
+  "attributes": {
+    "programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program"
+    }
+  }
+}

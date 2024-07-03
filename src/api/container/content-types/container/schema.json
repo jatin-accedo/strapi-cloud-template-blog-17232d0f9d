@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "containers",
+  "info": {
+    "singularName": "container",
+    "pluralName": "containers",
+    "displayName": "Container",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "query": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "displayText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "template": {
+      "type": "enumeration",
+      "enum": [
+        "characters",
+        "hero-banner",
+        "continue-watching",
+        "carousel-portrait",
+        "carousel-wide",
+        "carousel-category-portrait",
+        "carousel-category-wide",
+        "category-carousel",
+        "categories",
+        "carousel-categories",
+        "carousel-view-all-portrait",
+        "grid-vertical-wide",
+        "grid-vertical-portrait",
+        "grid-horizontal-portrait",
+        "grid-horizontal-wide"
+      ]
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "vision.container-movies",
+        "vision.container-show",
+        "vision.container-programs"
+      ],
+      "required": true
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tab",
     "pluralName": "tabs",
-    "displayName": "Tab"
+    "displayName": "Tab",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,6 +18,9 @@
         "Home",
         "Movies",
         "Series",
+        "MyList",
+        "Downloads",
+        "Rentals",
         "Settings"
       ],
       "default": "Home",
@@ -29,6 +33,11 @@
     "tabSystemImage": {
       "type": "string",
       "required": true
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
     }
   }
 }
